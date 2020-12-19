@@ -46,8 +46,11 @@ public class ValaCat {
                 syntax.CPlusPlus(data);
                 data = line.read_line();
             }
-        } else {
-            /* Regular */
+        } else if(language == 0) {
+            while(data != null) {
+                syntax.Regular(data);
+                data = line.read_line();
+            }
         }
     }
 }
@@ -62,6 +65,8 @@ int main(string[] arguments) {
 
     if(arguments[1].contains(".cpp") == true) {
         cat.ReadFile(1, arguments[1]);
+    } else {
+        cat.ReadFile(0, arguments[1]);
     }
 
     return 0;

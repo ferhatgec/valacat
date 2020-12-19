@@ -22,6 +22,29 @@ public class Languages {
        return "null";
 	}
 
+    public void Regular(owned string line) {
+        line = replaceAll(line, "int", colors.WBOLD_BLUE_COLOR + "int" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "long", colors.WBOLD_BLUE_COLOR + "long" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "char", colors.WBOLD_BLUE_COLOR + "char" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "const", colors.WBOLD_LIGHT_BLUE_COLOR + "const" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "void", colors.WBOLD_BLUE_COLOR + "void" + colors.WBLACK_COLOR);
+
+        /* TODO:
+         * Create token() function & add these tokens
+        */
+        line = replaceAll(line, "::", colors.WBOLD_LIGHT_YELLOW_COLOR + "::" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "{", colors.WBOLD_LIGHT_YELLOW_COLOR + "{" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "}", colors.WBOLD_LIGHT_YELLOW_COLOR + "}" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "(", colors.WBOLD_LIGHT_YELLOW_COLOR + "(" + colors.WBLACK_COLOR);
+        line = replaceAll(line, ")", colors.WBOLD_LIGHT_YELLOW_COLOR + ")" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "*", colors.WBOLD_LIGHT_YELLOW_COLOR + "*" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "<", colors.WBOLD_LIGHT_YELLOW_COLOR + "<" + colors.WBLACK_COLOR);
+        line = replaceAll(line, ">", colors.WBOLD_LIGHT_YELLOW_COLOR + ">" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "+", colors.WBOLD_LIGHT_YELLOW_COLOR + "+" + colors.WBLACK_COLOR);
+
+        stdout.printf("%s\n", line);
+    }
+
     public void CPlusPlus(owned string line) {
         line = replaceAll(line, "int", colors.WBOLD_BLUE_COLOR + "int" + colors.WBLACK_COLOR);
 
