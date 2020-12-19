@@ -137,4 +137,57 @@ public class Languages {
 
         stdout.printf("%s\n", line);
     }
+
+    public void FlaScript(owned string line) {
+        line = replaceAll(line, "var", colors.WBOLD_BLUE_COLOR + "var" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "int", colors.WBOLD_LIGHT_BLUE_COLOR + "int" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "string", colors.WBOLD_BLUE_COLOR + "string" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "if", colors.WBOLD_LIGHT_RED_COLOR + "if" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "else", colors.WBOLD_LIGHT_RED_COLOR + "else" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "for", colors.WBOLD_MAGENTA_COLOR + "for" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "do", colors.WBOLD_MAGENTA_COLOR + "do" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "while", colors.WBOLD_MAGENTA_COLOR + "while" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "func", colors.WBOLD_RED_COLOR + "func" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "main", colors.WBOLD_LIGHT_RED_COLOR + "main" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "@append", colors.WBOLD_LIGHT_YELLOW_COLOR + "@append" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "@pop_back", colors.WBOLD_LIGHT_YELLOW_COLOR + "@pop_back" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "@between", colors.WBOLD_LIGHT_YELLOW_COLOR + "@between" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "import", colors.WBOLD_YELLOW_COLOR + "import" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "defin", colors.WBOLD_MAGENTA_COLOR + "defin" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "put", colors.WBOLD_MAGENTA_COLOR + "put" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "#ifdef", colors.WBOLD_MAGENTA_COLOR + "#ifdef" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "#endif", colors.WBOLD_MAGENTA_COLOR + "#endif" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "return", colors.WBOLD_LIGHT_MAGENTA_COLOR + "return" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "SystemInfo", colors.WBOLD_LIGHT_MAGENTA_COLOR + "SystemInfo" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "Colorized", colors.WBOLD_LIGHT_MAGENTA_COLOR + "Colorized" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "newline", colors.WBOLD_LIGHT_BLACK_COLOR + "newline" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "print", colors.WBOLD_CYAN_COLOR + "print" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "fprintf", colors.WBOLD_CYAN_COLOR + "fprintf" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "@echo", colors.WBOLD_CYAN_COLOR + "@echo" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "fprintln", colors.WBOLD_CYAN_COLOR + "fprintln" + colors.WBLACK_COLOR);
+
+        line = replaceAll(line, "::", colors.WBOLD_LIGHT_YELLOW_COLOR + "::" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "{", colors.WBOLD_LIGHT_YELLOW_COLOR + "{" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "}", colors.WBOLD_LIGHT_YELLOW_COLOR + "}" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "(", colors.WBOLD_LIGHT_YELLOW_COLOR + "(" + colors.WBLACK_COLOR);
+        line = replaceAll(line, ")", colors.WBOLD_LIGHT_YELLOW_COLOR + ")" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "*", colors.WBOLD_LIGHT_YELLOW_COLOR + "*" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "<", colors.WBOLD_LIGHT_YELLOW_COLOR + "<" + colors.WBLACK_COLOR);
+        line = replaceAll(line, ">", colors.WBOLD_LIGHT_YELLOW_COLOR + ">" + colors.WBLACK_COLOR);
+        line = replaceAll(line, "+", colors.WBOLD_LIGHT_YELLOW_COLOR + "+" + colors.WBLACK_COLOR);
+
+        stdout.printf("%s\n", line);
+    }
 }
